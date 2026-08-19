@@ -60,25 +60,6 @@ Aplicación web que identifica objetos en imágenes usando un modelo de Machine 
 
 ---
 
-## ⚙️ Cómo reproducir el entrenamiento
-
-1. Abrir `CIFAR10_Clasificador.ipynb` en Google Colab
-2. Ir a **Runtime → Change runtime type → GPU (T4)**
-3. Ejecutar todas las celdas en orden
-4. Al finalizar, descarga `cifar10_model.keras`
-5. Subir el modelo al repositorio GitHub junto con `app.py`
-
----
-
-## 🌐 Despliegue en Streamlit Cloud
-
-1. Crear repo en GitHub con: `app.py`, `cifar10_model.keras`, `requirements.txt`, `README.md`
-2. Ir a [share.streamlit.io](https://share.streamlit.io)
-3. New app → conectar repo → Main file: `app.py`
-4. Deploy → copiar URL pública y entregar
-
----
-
 ## 📊 Resultados del modelo
 
 - **Dataset:** CIFAR-10 (50,000 train / 10,000 test)
