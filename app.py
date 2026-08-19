@@ -16,14 +16,26 @@ CLASES = ['Avion', 'Auto', 'Pajaro', 'Gato', 'Ciervo',
 @st.cache_resource
 def load_model():
     m = models.Sequential([
+        # Bloque 1
         layers.Conv2D(32, (3,3), activation='relu', padding='same', input_shape=(32,32,3)),
+        layers.BatchNormalization(),
+        layers.Conv2D(32, (3,3), activation='relu', padding='same'),
         layers.MaxPooling2D(2,2),
         layers.Dropout(0.25),
+        # Bloque 2
+        layers.Conv2D(64, (3,3), activation='relu', padding='same'),
+        layers.BatchNormalization(),
         layers.Conv2D(64, (3,3), activation='relu', padding='same'),
         layers.MaxPooling2D(2,2),
         layers.Dropout(0.25),
+        # Bloque 3
+        layers.Conv2D(128, (3,3), activation='relu', padding='same'),
+        layers.BatchNormalization(),
+        layers.MaxPooling2D(2,2),
+        layers.Dropout(0.25),
+        # Clasificador
         layers.Flatten(),
-        layers.Dense(128, activation='relu'),
+        layers.Dense(256, activation='relu'),
         layers.Dropout(0.5),
         layers.Dense(10, activation='softmax')
     ])
@@ -74,7 +86,7 @@ if img_input:
     with st.expander('Sobre el modelo'):
         st.write("""
         - Dataset: CIFAR-10
-        - Arquitectura: CNN con bloques convolucionales + Dropout
+        - Arquitectura: CNN 3 bloques Conv2D + BatchNorm + Dropout
         - Entrenado en: Google Colab (GPU T4)
         - Clases: Avion, Auto, Pajaro, Gato, Ciervo, Perro, Rana, Caballo, Barco, Camion
         """)
