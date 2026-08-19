@@ -22,7 +22,7 @@ EMOJIS = {
 # ── Cargar modelo (cache para no recargar en cada interacción) ─────────────────
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model('cifar10_model.keras')
+    return tf.keras.models.load_model('cifar10_model.h5')
 
 model = load_model()
 
