@@ -67,7 +67,7 @@ else:
 if img_input:
     col1, col2 = st.columns([1, 1])
     with col1:
-        st.image(img_input, caption='Imagen cargada', use_column_width=True)
+        st.image(img_input, caption='Imagen cargada', use_container_width=True)
     with col2:
         img_resized = img_input.resize((32, 32))
         img_array = np.array(img_resized).astype('float32') / 255.0
