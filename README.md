@@ -16,17 +16,6 @@ Aplicación web que identifica objetos en imágenes usando un modelo de Machine 
 
 ---
 
-## 🏗️ Arquitectura del modelo
-
-- **Tipo:** CNN (Red Neuronal Convolucional)
-- **Bloques:** 3 bloques Conv2D + BatchNormalization + MaxPooling + Dropout
-- **Clasificador:** Dense(256) → Dense(10, softmax)
-- **Optimizador:** Adam con ReduceLROnPlateau
-- **Entrenamiento:** Google Colab (GPU T4), ~30 épocas con EarlyStopping
-- **Data augmentation:** Flip horizontal, shift, rotación
-
----
-
 ## 🛠️ Herramientas utilizadas
 
 | Herramienta | Uso |
