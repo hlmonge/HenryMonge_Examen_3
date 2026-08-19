@@ -27,7 +27,7 @@ def load_model():
 model = load_model()
 
 # ── Header ────────────────────────────────────────────────────────────────────
-st.title('🎯 Clasificador de Imágenes')
+st.title('🎯 Clasificador de Imágenes - Henry Monge')
 st.caption('Universidad Tecnológica de Honduras (UTH) | Computación en la Nube')
 st.divider()
 
