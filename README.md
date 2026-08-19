@@ -52,7 +52,7 @@ Aplicación web que identifica objetos en imágenes usando un modelo de Machine 
 
 ## 🚀 Cómo usar la app
 
-1. Ir a la URL pública de la app (Streamlit Cloud)
+1. Ir a la URL pública de la app (Streamlit Cloud): https://henrymonge-examen3.streamlit.app/
 2. Seleccionar fuente: **Subir archivo** o **Cámara**
 3. Cargar o tomar una foto
 4. La app muestra el objeto detectado y el porcentaje de confianza
