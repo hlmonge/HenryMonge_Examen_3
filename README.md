@@ -2,7 +2,7 @@
 
 **Universidad Tecnológica de Honduras (UTH)**  
 **Examen: Computación en la Nube | Docente: Ing. Asalia Zavala**  
-**Desarrollado por:** [TU NOMBRE]
+**Desarrollado por:** Henry Luis Monge
 
 ---
 
