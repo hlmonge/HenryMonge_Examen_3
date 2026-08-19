@@ -32,9 +32,8 @@ Aplicación web que identifica objetos en imágenes usando un modelo de Machine 
 ## 📂 Estructura del proyecto
 
 ```
-├── CIFAR10_Clasificador.ipynb   # Notebook de entrenamiento (Google Colab)
 ├── app.py                       # Aplicación Streamlit
-├── cifar10_model.keras          # Modelo entrenado (generado en Colab)
+├── cifar10_weights.weights.h5   # Modelo entrenado (generado en Colab)
 ├── requirements.txt             # Dependencias
 └── README.md                    # Esta documentación
 ```
