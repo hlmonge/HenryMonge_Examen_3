@@ -85,4 +85,4 @@ if img_input:
         """)
 
 st.divider()
-st.caption('🎓 Desarrollado por: **[TU NOMBRE]** | UTH 2024 | Dataset: CIFAR-10 | Framework: TensorFlow/Keras')
+st.caption('🎓 Desarrollado por: **Henry Monge** | UTH 2024 | Dataset: CIFAR-10 | Framework: TensorFlow/Keras')
